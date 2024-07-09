@@ -1,0 +1,44 @@
+.bannerCardWrapper {
+  background-color: rgb(35, 201, 146);
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  border: 3px solid black;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.bannerImg {
+  border-radius: 15px;
+  height: 250px;
+  width: 250px;
+  border: 3px solid black;
+}
+
+.bannerCardHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerCardTitle {
+  font-weight: 600;
+  font-size: larger;
+  color: blue;
+}
+
+.bannerCardText {
+  font-weight: 400;
+  color: white;
+}
+
+.label {
+  color: black;
+  font-weight: 700;
+}
+
+.bg-color {
+  background-color: rgb(160, 138, 196);
+}

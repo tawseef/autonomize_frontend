@@ -1,0 +1,11 @@
+.navDiv {
+  height: 30px;
+  background: grey;
+}
+
+.contentNAV {
+  padding-top: 5px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: large;
+}

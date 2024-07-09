@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.inputBox {
+  width: 400px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.button {
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  font-weight: 200;
+}
+.friendCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 15px;
+}
+
+.userCard {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

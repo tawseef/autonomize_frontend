@@ -1,0 +1,33 @@
+.cardWrapper {
+  background-color: rgb(206, 198, 198);
+  display: flex;
+  gap: 40px;
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid burlywood;
+  padding-left: 30px;
+}
+
+.img {
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 15px;
+  height: 70px;
+  width: 70px;
+}
+
+.cardHead {
+  margin-top: 15px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: larger;
+  color: blue;
+}
+
+.cardText {
+  font-weight: 400;
+  color: blueviolet;
+}
