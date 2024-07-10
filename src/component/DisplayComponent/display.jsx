@@ -7,11 +7,11 @@ import Card from "../displayCard/card";
 import axios from "axios";
 import BannerCard from "../bannerCard/bannerCard";
 
-// export const API = "http://localhost:8082/v1/users";
-// export const FriendAPI = "http://localhost:8082/v1/friend";
+export const API = "http://localhost:8082/v1/users";
+export const FriendAPI = "http://localhost:8082/v1/friend";
 
-export const API = "https://autonomize-backend-ym55.onrender.com/v1/users";
-export const FriendAPI = "https://autonomize-backend-ym55.onrender.com/v1/friend";
+// export const API = "https://autonomize-backend-ym55.onrender.com/v1/users";
+// export const FriendAPI = "https://autonomize-backend-ym55.onrender.com/v1/friend";
 
 function Display() {
   const [dataInp, setDataInp] = useState("");
@@ -32,10 +32,11 @@ function Display() {
   const handleAPI = async (user) => {
     try {
       const response = await axios.get(`${API}/${user}`);
-      if (response) setApiData([response.data]);
+      console.log(response.data);
+      if (response.data) setApiData([response.data]);
       else setApiData([]);
     } catch (error) {
-      throw error;
+      console.log(error);
     }
   };
 
@@ -45,7 +46,7 @@ function Display() {
       if (response) setApiFriendData(response.data);
       else setApiFriendData([]);
     } catch (error) {
-      throw error;
+      console.log(error);
     }
   };
 

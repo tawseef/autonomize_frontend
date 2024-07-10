@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./card.style.css";
 const Card = ({ data, handleBanner }) => {
+  console.log(data);
   const handleClick = (ele) => () => {
     handleBanner(ele);
   };
