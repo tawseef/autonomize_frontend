@@ -7,8 +7,11 @@ import Card from "../displayCard/card";
 import axios from "axios";
 import BannerCard from "../bannerCard/bannerCard";
 
-export const API = "https://autonomize-backend-vpsy.onrender.com/v1/users";
-export const FriendAPI = "https://autonomize-backend-vpsy.onrender.com/v1/friend";
+// export const API = "http://localhost:8082/v1/users";
+// export const FriendAPI = "http://localhost:8082/v1/friend";
+
+export const API = "https://autonomize-backend-llar.onrender.com/v1/users";
+export const FriendAPI = "https://autonomize-backend-llar.onrender.com/v1/friend";
 
 function Display() {
   const [dataInp, setDataInp] = useState("");
