@@ -25,5 +25,6 @@ dist-ssr
 
 # dependencies
 /node_modules
+/backend
 /.pnp
 .pnp.js
