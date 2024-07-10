@@ -50,7 +50,9 @@ function Display() {
   };
 
   useEffect(() => {
-    handleFriendAPI(dataInp);
+    if(apiData.length!=0){
+      handleFriendAPI(dataInp);
+    }
   }, [apiData]);
 
   return (
