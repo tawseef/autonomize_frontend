@@ -32,7 +32,7 @@ function Display() {
   const handleAPI = async (user) => {
     try {
       const response = await axios.get(`${API}/${user}`);
-      if (response.data) setApiData([response.data]);
+      if (response) setApiData([response.data]);
       else setApiData([]);
     } catch (error) {
       throw error;
@@ -42,7 +42,7 @@ function Display() {
   const handleFriendAPI = async (user) => {
     try {
       const response = await axios.get(`${FriendAPI}/${user}`);
-      if (response.data) setApiFriendData(response.data);
+      if (response) setApiFriendData(response.data);
       else setApiFriendData([]);
     } catch (error) {
       throw error;
