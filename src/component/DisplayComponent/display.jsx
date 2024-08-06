@@ -7,11 +7,12 @@ import Card from "../displayCard/card";
 import axios from "axios";
 import BannerCard from "../bannerCard/bannerCard";
 
-// export const API = "http://localhost:8082/v1/users";
-// export const FriendAPI = "http://localhost:8082/v1/friend";
+export const API = "http://localhost:8082/v1/users";
+export const FriendAPI = "http://localhost:8082/v1/friend";
 
-export const API = "https://autonomize-backend-ym55.onrender.com/v1/users";
-export const FriendAPI = "https://autonomize-backend-ym55.onrender.com/v1/friend";
+// export const API = "https://autonomize-backend-ym55.onrender.com/v1/users";
+// export const FriendAPI = "https://autonomize-backend-ym55.onrender.com/v1/friend";
+
 
 function Display() {
   const [dataInp, setDataInp] = useState("");
@@ -72,6 +73,7 @@ function Display() {
             placeholder="Enter user name"
             value={dataInp}
             onChange={(e) => setDataInp(e.target.value)}
+            required
           />
         </div>
         <div className="">

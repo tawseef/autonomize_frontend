@@ -2,6 +2,8 @@
 import "./bannercard.style.css";
 
 const BannerCard = ({ data, toggle }) => {
+  if(Array.isArray(data)) data=data[0]
+
   if (data.name) {
     return (
       <div className="bannerCardWrapper" key="uni" onClick={toggle}>

@@ -5,6 +5,8 @@ const Card = ({ data, handleBanner }) => {
     handleBanner(ele);
   }
   
+  if(Array.isArray(data)) data=data[0]
+  
   if (!data || data.length === 0) {
     return <div></div>;
   } else if (data.friend) {
