@@ -30,9 +30,13 @@ function Display() {
     setBanner(!banner);
   };
 
+  const headers = {
+    'Content-Type': 'application/json'
+  };
+  
   const handleAPI = async (user) => {
     try {
-      const response = await axios.get(`${API}/${user}`);
+      const response = await axios.get(`${API}/${user}`, {headers});
       console.log(response.data);
       if (response.data) setApiData([response.data]);
       else setApiData([]);
